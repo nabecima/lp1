@@ -1,0 +1,13 @@
+@use "../global" as g;
+.l-footer {
+  padding: 8px 0;
+  color: g.$white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.9;
+  background: linear-gradient(
+    to right,
+    map-get(g.$gradient, "red"),
+    map-get(g.$gradient, "dark-red")
+  );
+}
