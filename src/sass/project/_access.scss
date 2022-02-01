@@ -10,9 +10,16 @@
     text-align: center;
     margin-bottom: 3.1rem;
 
-    &::after {
-      content: url(../images/price_icon.png);
+    .webp &::after {
+      content: url(../images/price_icon.webp);
       display: block;
+    }
+
+    .no-webp &::after {
+      &::after {
+        content: url(../images/price_icon.png);
+        display: block;
+      }
     }
   }
 

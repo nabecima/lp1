@@ -1,2 +1,119 @@
-/*! For license information please see bundle.js.LICENSE.txt */
-!function(){var n={629:function(){function n(e){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(n){return typeof n}:function(n){return n&&"function"==typeof Symbol&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n},n(e)}!function(e,o,t){function A(e,o){return n(e)===o}function a(n){var e=c.className,o=u._config.classPrefix||"";if(p&&(e=e.baseVal),u._config.enableJSClass){var t=new RegExp("(^|\\s)"+o+"no-js(\\s|$)");e=e.replace(t,"$1"+o+"js$2")}u._config.enableClasses&&(e+=" "+o+n.join(" "+o),p?c.className.baseVal=e:c.className=e)}function i(e,o){if("object"==n(e))for(var t in e)f(e,t)&&i(t,e[t]);else{var A=(e=e.toLowerCase()).split("."),r=u[A[0]];if(2==A.length&&(r=r[A[1]]),void 0!==r)return u;o="function"==typeof o?o():o,1==A.length?u[A[0]]=o:(!u[A[0]]||u[A[0]]instanceof Boolean||(u[A[0]]=new Boolean(u[A[0]])),u[A[0]][A[1]]=o),a([(o&&0!=o?"":"no-")+A.join("-")]),u._trigger(e,o)}return u}var r=[],s=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var o=this;setTimeout((function(){e(o[n])}),0)},addTest:function(n,e,o){s.push({name:n,fn:e,options:o})},addAsyncTest:function(n){s.push({name:null,fn:n})}},u=function(){};u.prototype=l,u=new u;var f,c=o.documentElement,p="svg"===c.nodeName.toLowerCase();!function(){var n={}.hasOwnProperty;f=A(n,"undefined")||A(n.call,"undefined")?function(n,e){return e in n&&A(n.constructor.prototype[e],"undefined")}:function(e,o){return n.call(e,o)}}(),l._l={},l.on=function(n,e){this._l[n]||(this._l[n]=[]),this._l[n].push(e),u.hasOwnProperty(n)&&setTimeout((function(){u._trigger(n,u[n])}),0)},l._trigger=function(n,e){if(this._l[n]){var o=this._l[n];setTimeout((function(){var n;for(n=0;n<o.length;n++)(0,o[n])(e)}),0),delete this._l[n]}},u._q.push((function(){l.addTest=i})),u.addAsyncTest((function(){function n(n,e,o){function t(e){var t=!(!e||"load"!==e.type)&&1==A.width;i(n,"webp"===n&&t?new Boolean(t):t),o&&o(e)}var A=new Image;A.onerror=t,A.onload=t,A.src=e}var e=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],o=e.shift();n(o.name,o.uri,(function(o){if(o&&"load"===o.type)for(var t=0;t<e.length;t++)n(e[t].name,e[t].uri)}))})),function(){var n,e,o,t,a,i;for(var l in s)if(s.hasOwnProperty(l)){if(n=[],(e=s[l]).name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(o=0;o<e.options.aliases.length;o++)n.push(e.options.aliases[o].toLowerCase());for(t=A(e.fn,"function")?e.fn():e.fn,a=0;a<n.length;a++)1===(i=n[a].split(".")).length?u[i[0]]=t:(!u[i[0]]||u[i[0]]instanceof Boolean||(u[i[0]]=new Boolean(u[i[0]])),u[i[0]][i[1]]=t),r.push((t?"":"no-")+i.join("-"))}}(),a(r),delete l.addTest,delete l.addAsyncTest;for(var d=0;d<u._q.length;d++)u._q[d]();e.Modernizr=u}(window,document)}},e={};function o(t){var A=e[t];if(void 0!==A)return A.exports;var a=e[t]={exports:{}};return n[t](a,a.exports,o),a.exports}o.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return o.d(e,{a:e}),e},o.d=function(n,e){for(var t in e)o.o(e,t)&&!o.o(n,t)&&Object.defineProperty(n,t,{enumerable:!0,get:e[t]})},o.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},function(){"use strict";o(629)}()}();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _modernizr_custom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modernizr-custom */ \"./src/js/modernizr-custom.js\");\n/* harmony import */ var _modernizr_custom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modernizr_custom__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://lp2/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/modernizr-custom.js":
+/*!************************************!*\
+  !*** ./src/js/modernizr-custom.js ***!
+  \************************************/
+/***/ (function() {
+
+eval("function _typeof(obj) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }, _typeof(obj); }\n\n/*! modernizr 3.6.0 (Custom Build) | MIT *\n * https://modernizr.com/download/?-webp-setclasses !*/\n!function (e, n, A) {\n  function o(e, n) {\n    return _typeof(e) === n;\n  }\n\n  function t() {\n    var e, n, A, t, a, i, l;\n\n    for (var f in r) {\n      if (r.hasOwnProperty(f)) {\n        if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (A = 0; A < n.options.aliases.length; A++) {\n          e.push(n.options.aliases[A].toLowerCase());\n        }\n\n        for (t = o(n.fn, \"function\") ? n.fn() : n.fn, a = 0; a < e.length; a++) {\n          i = e[a], l = i.split(\".\"), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? \"\" : \"no-\") + l.join(\"-\"));\n        }\n      }\n    }\n  }\n\n  function a(e) {\n    var n = u.className,\n        A = Modernizr._config.classPrefix || \"\";\n\n    if (c && (n = n.baseVal), Modernizr._config.enableJSClass) {\n      var o = new RegExp(\"(^|\\\\s)\" + A + \"no-js(\\\\s|$)\");\n      n = n.replace(o, \"$1\" + A + \"js$2\");\n    }\n\n    Modernizr._config.enableClasses && (n += \" \" + A + e.join(\" \" + A), c ? u.className.baseVal = n : u.className = n);\n  }\n\n  function i(e, n) {\n    if (\"object\" == _typeof(e)) for (var A in e) {\n      f(e, A) && i(A, e[A]);\n    } else {\n      e = e.toLowerCase();\n      var o = e.split(\".\"),\n          t = Modernizr[o[0]];\n      if (2 == o.length && (t = t[o[1]]), \"undefined\" != typeof t) return Modernizr;\n      n = \"function\" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? \"\" : \"no-\") + o.join(\"-\")]), Modernizr._trigger(e, n);\n    }\n    return Modernizr;\n  }\n\n  var s = [],\n      r = [],\n      l = {\n    _version: \"3.6.0\",\n    _config: {\n      classPrefix: \"\",\n      enableClasses: !0,\n      enableJSClass: !0,\n      usePrefixes: !0\n    },\n    _q: [],\n    on: function on(e, n) {\n      var A = this;\n      setTimeout(function () {\n        n(A[e]);\n      }, 0);\n    },\n    addTest: function addTest(e, n, A) {\n      r.push({\n        name: e,\n        fn: n,\n        options: A\n      });\n    },\n    addAsyncTest: function addAsyncTest(e) {\n      r.push({\n        name: null,\n        fn: e\n      });\n    }\n  },\n      Modernizr = function Modernizr() {};\n\n  Modernizr.prototype = l, Modernizr = new Modernizr();\n  var f,\n      u = n.documentElement,\n      c = \"svg\" === u.nodeName.toLowerCase();\n  !function () {\n    var e = {}.hasOwnProperty;\n    f = o(e, \"undefined\") || o(e.call, \"undefined\") ? function (e, n) {\n      return n in e && o(e.constructor.prototype[n], \"undefined\");\n    } : function (n, A) {\n      return e.call(n, A);\n    };\n  }(), l._l = {}, l.on = function (e, n) {\n    this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () {\n      Modernizr._trigger(e, Modernizr[e]);\n    }, 0);\n  }, l._trigger = function (e, n) {\n    if (this._l[e]) {\n      var A = this._l[e];\n      setTimeout(function () {\n        var e, o;\n\n        for (e = 0; e < A.length; e++) {\n          (o = A[e])(n);\n        }\n      }, 0), delete this._l[e];\n    }\n  }, Modernizr._q.push(function () {\n    l.addTest = i;\n  }), Modernizr.addAsyncTest(function () {\n    function e(e, n, A) {\n      function o(n) {\n        var o = n && \"load\" === n.type ? 1 == t.width : !1,\n            a = \"webp\" === e;\n        i(e, a && o ? new Boolean(o) : o), A && A(n);\n      }\n\n      var t = new Image();\n      t.onerror = o, t.onload = o, t.src = n;\n    }\n\n    var n = [{\n      uri: \"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=\",\n      name: \"webp\"\n    }, {\n      uri: \"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==\",\n      name: \"webp.alpha\"\n    }, {\n      uri: \"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA\",\n      name: \"webp.animation\"\n    }, {\n      uri: \"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=\",\n      name: \"webp.lossless\"\n    }],\n        A = n.shift();\n    e(A.name, A.uri, function (A) {\n      if (A && \"load\" === A.type) for (var o = 0; o < n.length; o++) {\n        e(n[o].name, n[o].uri);\n      }\n    });\n  }), t(), a(s), delete l.addTest, delete l.addAsyncTest;\n\n  for (var p = 0; p < Modernizr._q.length; p++) {\n    Modernizr._q[p]();\n  }\n\n  e.Modernizr = Modernizr;\n}(window, document);\n\n//# sourceURL=webpack://lp2/./src/js/modernizr-custom.js?");
+
+/***/ }),
+
+/***/ "./src/sass/style.scss":
+/*!*****************************!*\
+  !*** ./src/sass/style.scss ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://lp2/./src/sass/style.scss?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/index.js");
+/******/ 	
+/******/ })()
+;

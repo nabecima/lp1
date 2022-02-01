@@ -11,7 +11,12 @@
     letter-spacing: 0.1em;
     margin-bottom: 3.2rem;
 
-    &::after {
+    .webp &::after {
+      content: url(../images/feature_icon.webp);
+      display: block;
+    }
+
+    .no-webp &::after {
       content: url(../images/feature_icon.png);
       display: block;
     }

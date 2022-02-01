@@ -10,7 +10,12 @@
     text-align: center;
     margin-bottom: 5.7rem;
 
-    &::after {
+    .webp &::after {
+      content: url(../images/price_icon.webp);
+      display: block;
+    }
+
+    .no-webp &::after {
       content: url(../images/price_icon.png);
       display: block;
     }
