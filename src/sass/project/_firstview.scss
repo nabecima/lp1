@@ -3,7 +3,14 @@
   position: relative;
   z-index: 0;
   height: 100vh;
-  background-image: url(../images/firstview.png);
+
+  .webp & {
+    background-image: url(../images/firstview.webp);
+  }
+
+  .no-webp & {
+    background-image: url(../images/firstview.png);
+  }
   background-size: cover;
   background-repeat: no-repeat;
 
