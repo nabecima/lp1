@@ -6,13 +6,13 @@ images=`find ./src/images -type f -name '*.jpg' -or -name '*.jpeg' -or -name '*.
 for image in $images;
 do
   # 拡張子のみ取得
-  extension=${image##*.}
+  # extension=${image##*.}
 
   # 拡張子によって条件分岐し、圧縮コマンドを実行
-  case $extension in
-    "png" ) pngquant -s1 --ext .png $image -f;;
-    "jpg" | "jpeg" ) jpegoptim --strip-all -m70 $image;;
-  esac
+  # case $extension in
+  #   "png" ) pngquant -s1 --ext .png $image -f;;
+  #   "jpg" | "jpeg" ) jpegoptim --strip-all -m70 $image;;
+  # esac
 
   # 拡張子を含むファイル名を取得
   filename_with_extension=`basename $image`
