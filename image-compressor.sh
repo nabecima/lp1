@@ -5,21 +5,13 @@ images=`find ./src/images -type f -name '*.jpg' -or -name '*.jpeg' -or -name '*.
 # ループ
 for image in $images;
 do
-  # 拡張子のみ取得
-  # extension=${image##*.}
+  # ディレクトリ名を取得
+  dir_name=`dirname $image`
 
-  # 拡張子によって条件分岐し、圧縮コマンドを実行
-  # case $extension in
-  #   "png" ) pngquant -s1 --ext .png $image -f;;
-  #   "jpg" | "jpeg" ) jpegoptim --strip-all -m70 $image;;
-  # esac
+  extension=${image##*.}
 
-  # 拡張子を含むファイル名を取得
-  filename_with_extension=`basename $image`
-
-  # 拡張子を取り除いたファイル名だけを取得
-  filename=${filename_with_extension%.*}
-
-  # webpに変換
-  cwebp $image -o "./src/images/"$filename".webp"
+  case $extension in
+    "png" ) squoosh-cli --oxipng '{quality:70}' -d $dir_name $image | squoosh-cli --webp '{quality:70}' -d $dir_name $image;;
+    "jpg" | "jpeg" ) squoosh-cli --mozjpeg '{quality:70}' -d $dir_name $image | squoosh-cli --webp '{quality:70}' -d $dir_name $image;;
+  esac
 done
